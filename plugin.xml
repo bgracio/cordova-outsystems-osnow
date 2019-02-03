@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.outsystems.plugins.osnow"
+    version="1.0.0">
+    <name>OutSystems Now</name>
+    <description>Cordova OutSystems Now Plugin</description>
+    <license>OutSystems</license>
+    <keywords>cordova,osnow,outsystems</keywords>
+    <repo>https://github.com/OutSystems/cordova-outsystems-osnow.git</repo>
+    <issue>https://github.com/OutSystems/cordova-outsystems-osnow/issues</issue>
+
+    <js-module src="www/osnow.js" name="OSNow">
+        <clobbers target="OSNow" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="OSNow">
+          <param name="android-package" value="com.outsystems.plugins.osnow.OutSystemsNow" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+
+      <source-file src="src/android/OutSystemsNow.java" target-dir="src/com/outsystems/plugins/osnow" />
+    </platform>
+</plugin>

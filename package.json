@@ -1,0 +1,24 @@
+{
+  "name": "com.outsystems.plugins.osnow",
+  "version": "0.0.1",
+  "description": "Cordova OutSystems Now Plugin",
+  "cordova": {
+    "id": "com.outsystems.plugins.osnow",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OutSystems/cordova-outsystems-osnow"
+  },
+  "keywords": [
+    "cordova",
+    "osnow",
+    "outsystems"
+  ],
+  "author": "OutSystems",
+  "license": "Copyright (c) 2016 OutSystems",
+  "homepage": "https://www.outsystems.com/"
+}
