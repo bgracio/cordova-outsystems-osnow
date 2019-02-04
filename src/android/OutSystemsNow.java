@@ -17,13 +17,12 @@ public class OutSystemsNow extends CordovaPlugin {
 
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     super.initialize(cordova, webView);
-    
+
     webView.getView().setOnTouchListener(new View.OnTouchListener() {
       @Override
       public boolean onTouch(View v, MotionEvent event) {
         if(event.getAction() == MotionEvent.ACTION_UP){
           Log.d("OSNow", "Click!");
-          return true;
         }
 
         return false;
